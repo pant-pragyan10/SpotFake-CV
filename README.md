@@ -1,5 +1,9 @@
 # Spot the Fake Photo
 
+<img width="542" height="628" alt="image" src="https://github.com/user-attachments/assets/f02e14db-f554-4d74-81e0-886ed17611ca" />
+<img width="542" height="628" alt="image" src="https://github.com/user-attachments/assets/418827f9-be90-47b2-b215-05e0bc959ba4" />
+
+
 Classifies one RGB image as either:
 
 - `0`: genuine camera photo of a real-world object
