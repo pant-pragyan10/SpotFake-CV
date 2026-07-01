@@ -1,0 +1,22 @@
+# Feature Importance Ranking
+
+- sharpness_edge_sharpness_ratio: importance=0.9560 mi=0.2688 var=1.5900
+- contrast_rms: importance=0.9143 mi=0.3797 var=0.0822
+- texture_local_entropy_mean: importance=0.9016 mi=0.1997 var=0.2516
+- hsv_value_mean: importance=0.8945 mi=0.1682 var=200.6696
+- hsv_value_std: importance=0.8934 mi=0.1862 var=85.4620
+- rgb_mean_g: importance=0.8692 mi=0.2608 var=0.0170
+- hsv_hue_sin_mean: importance=0.8593 mi=0.1929 var=0.1092
+- texture_uniformity: importance=0.8357 mi=0.1997 var=0.0157
+- pixel_grid_vertical_spacing: importance=0.8264 mi=0.1260 var=125.0000
+- luminance_mean: importance=0.7967 mi=0.1725 var=0.0166
+- rgb_std_r: importance=0.7912 mi=0.2103 var=0.0037
+- texture_local_entropy_std: importance=0.7890 mi=0.1534 var=0.0457
+- rgb_mean_b: importance=0.7879 mi=0.1627 var=0.0176
+- edge_density: importance=0.7714 mi=0.1994 var=0.0039
+- rgb_std_g: importance=0.7429 mi=0.1915 var=0.0031
+- rgb_entropy_r: importance=0.7407 mi=0.0846 var=0.2039
+- hsv_hue_cos_mean: importance=0.7396 mi=0.0946 var=0.1140
+- contrast_local_std: importance=0.7264 mi=0.2565 var=0.0003
+- pixel_grid_horizontal_periodicity: importance=0.7187 mi=0.1265 var=0.0108
+- texture_complexity: importance=0.7110 mi=0.0748 var=0.8874

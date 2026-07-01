@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spot the Fake Photo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Spot the Fake Photo</h1>
+      <p class="subtitle">Real photo, or a photo of a screen? 91 forensic features + a Random Forest, running live.</p>
+    </header>
+
+    <div class="card">
+      <div class="tabs">
+        <button class="tab active" data-tab="camera">Camera</button>
+        <button class="tab" data-tab="upload">Upload</button>
+      </div>
+
+      <section id="camera-panel" class="panel active">
+        <div class="viewport">
+          <video id="video" autoplay playsinline muted></video>
+          <div id="camera-placeholder" class="placeholder">
+            <p>Camera is off</p>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="camera-toggle" class="btn primary">Start Camera</button>
+        </div>
+      </section>
+
+      <section id="upload-panel" class="panel">
+        <label for="file-input" id="dropzone" class="dropzone">
+          <img id="upload-preview" class="upload-preview hidden" alt="preview">
+          <div id="dropzone-text">
+            <p><strong>Click to choose a photo</strong> or drag one here</p>
+          </div>
+        </label>
+        <input type="file" id="file-input" accept="image/*" hidden>
+      </section>
+
+      <div id="result" class="result hidden">
+        <div class="result-label">
+          <span id="result-badge" class="badge"></span>
+          <span id="result-latency" class="latency"></span>
+        </div>
+        <div class="meter">
+          <div id="meter-fill" class="meter-fill"></div>
+        </div>
+        <div class="meter-labels">
+          <span>Real</span>
+          <span id="meter-score">0%</span>
+          <span>Screen</span>
+        </div>
+      </div>
+
+      <div id="error" class="error hidden"></div>
+    </div>
+
+    <footer>
+      <p>Runs entirely on the same <code>predict.py</code> model — no cloud call, ~150ms/image on a laptop CPU.</p>
+    </footer>
+  </div>
+
+  <canvas id="canvas" hidden></canvas>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

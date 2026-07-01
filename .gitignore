@@ -1,0 +1,19 @@
+# Raw training photos (~800MB) -- not part of the code submission.
+# Collect your own into data/raw/real/ and data/raw/screen/, see README.
+data/raw/real/*
+data/raw/screen/*
+!data/raw/real/.gitkeep
+!data/raw/screen/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/

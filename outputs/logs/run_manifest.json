@@ -1,0 +1,23 @@
+{
+  "dataset_root": "data/raw",
+  "available_extractors": [
+    "brightness_periodicity",
+    "colors",
+    "contrast",
+    "edges",
+    "fft",
+    "glare",
+    "moire",
+    "noise",
+    "pixel_grid",
+    "reflections",
+    "sharpness",
+    "texture"
+  ],
+  "feature_count": 91,
+  "sample_count": 354,
+  "failed_images": 0,
+  "latency_only": false,
+  "visualization_only": false,
+  "statistics_only": false
+}
