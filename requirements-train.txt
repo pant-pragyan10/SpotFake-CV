@@ -1,0 +1,8 @@
+# Extra deps needed only for scripts/collect_dataset.py, scripts/benchmark.py, and
+# scripts/train.py (Phase 5/6 data + analysis + model-comparison lab). Install on top of
+# requirements.txt: pip install -r requirements.txt -r requirements-train.txt
+pandas
+matplotlib
+seaborn
+xgboost
+tabulate

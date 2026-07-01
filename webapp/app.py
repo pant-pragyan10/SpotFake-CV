@@ -23,6 +23,7 @@ from PIL import Image, UnidentifiedImageError
 from src.models.inference import get_detector
 
 app = Flask(__name__)
+get_detector()  # warm the model at import time, not on the first request
 
 
 @app.get("/")
@@ -57,5 +58,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    get_detector()  # warm the model before serving
     app.run(host="0.0.0.0", port=5050, debug=False)

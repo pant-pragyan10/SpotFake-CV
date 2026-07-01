@@ -1,6 +1,0 @@
-numpy
-pillow
-scikit-learn
-scipy
-opencv-python
-joblib

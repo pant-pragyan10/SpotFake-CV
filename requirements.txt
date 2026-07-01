@@ -1,11 +1,10 @@
-numpy
-pillow
-scikit-learn
-scipy
-opencv-python
-matplotlib
-seaborn
-joblib
-pandas
-xgboost
-tabulate
+# Runtime deps for predict.py and the webapp/ demo -- this is what Vercel installs too.
+# Pinned to match the versions the shipped model (saved_models/trained_model.pkl) was trained
+# with, to avoid pickle/unpickle skew across scikit-learn versions.
+numpy==2.0.2
+pillow==11.3.0
+scikit-learn==1.6.1
+scipy==1.13.1
+opencv-python-headless==4.13.0.92
+joblib==1.5.3
+flask==3.1.3
